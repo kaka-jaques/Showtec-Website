@@ -6,6 +6,8 @@
 header .row{
     height: 110px;
     margin-right: 200px;
+    position: fixed;
+    width: 100%;
 }
 header .row .col-2{
     margin-left: 300px;
@@ -14,7 +16,26 @@ header .row a{
     text-decoration: none;
     font-size: 13px;
     color: black;
+    transition: all 0.2s ease-in-out;
+}
+header .row .active a{
+    color: red;
+    transition: all 0.2s ease-in-out;
+}
+header .row a:hover{
+    color: red;
+    transition: all 0.2s ease-in-out;
+}
+main section{
+    height: 200px;
+}
+#scrolltop{
+    position: fixed;
+}
+footer .row{
+    height: 100px;
 }
 @media (max-width: 1468px) {
     .navbar a{display: none;}
+    #logo {margin-left: 100px;}
 }
